@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hon. Binwell Mpundu - Nkana MP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #222;
+    }
+
+    header {
+      background: #005b96;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+
+    .profile h1 {
+      margin: 0.5rem 0 0.2rem;
+    }
+
+    .search-box {
+      text-align: center;
+      margin: 2rem auto;
+    }
+
+    .search-box input {
+      padding: 0.5rem;
+      width: 80%;
+      max-width: 400px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .councillors {
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .map-section {
+      padding: 2rem;
+      background: #eee;
+    }
+
+    .map-section h2 {
+      text-align: center;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+.social-icons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.facebook {
+  background-color: #1877F2;
+  background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
+  background-size: 18px;
+  background-position: center;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+  background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg');
+  background-size: 18px;
+  background-position: center;
+}
+
+.instagram {
+  background-color: #E4405F;
+  background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg');
+  background-size: 18px;
+  background-position: center;
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.dropbtn {
+  background-color: #005b96;
+  color: white;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 230px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1001;
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  color: #005b96;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-content img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.dropdown-menu:hover .dropdown-content {
+  display: block;
+}
+
+/* Info Section Styling */
+.info-section {
+  max-width: 800px;
+  margin: 60px auto;
+  text-align: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.info-section img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+
+<!-- Navigation Dropdown Menu -->
+<nav class="dropdown-menu">
+  <button class="dropbtn">☰ Menu</button>
+  <div class="dropdown-content">
+    <a href="#mission">
+      <img src="m.jpeg" alt="Mission"> Mission
+    </a>
+    <a href="#projects">
+      <img src="pro.png" alt="Projects"> Projects
+    </a>
+    <a href="#youth">
+      <img src="3.jpg" alt="Youth"> Youth Engagement
+    </a>
+    <a href="#cdf">
+      <img src="cdf.png" alt="CDF"> CDF Plans
+    </a>
+    <a href="#welfare">
+      <img src="sw.jpg" alt="Welfare"> Social Welfare
+    </a>
+    <a href="#collaborations">
+      <img src="c.jpg" alt="Collaboration"> Collaborations
+    </a>
+  </div>
+</nav>
+
+
+<!-- Minister Profile -->
+<header>
+  <div class="profile">
+    <img src="hm.jfif" alt="Hon. Binwell Mpundu">
+    <h1>Hon. Binwell Mpundu</h1>
+    <p>Member of Parliament – Nkana Constituency, Zambia</p>
+    <p>📞 <a href="tel:+260779564187" style="color:white;">+260779564187</a></p>
+    <p>📧 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=binwellmpundu@yahoo.co.uk" target="_blank" style="color:white;">binwellmpundu@yahoo.co.uk</a></p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1CF6VPquyu/" target="_blank" class="icon facebook" title="Facebook"></a>
+      <a href="https://x.com/mpundubinwell" target="_blank" class="icon twitter" title="Twitter"></a>
+      <a href="https://www.instagram.com/binwellmpundu?igsh=MWlna2xjZTk1dDR2ZA=" target="_blank" class="icon instagram" title="Instagram"></a>
+    </div>
+  </div>
+</header>
+
+<section id="mission" class="info-section">
+  <img src="m.jpeg" alt="Mission">
+  <h2>Mission</h2>
+  <p>Hon. Binwell Mpundu’s vision for Nkana Constituency includes inclusive development, transparency, and empowering the community through participatory governance.</p>
+</section>
+
+<section id="projects" class="info-section">
+  <img src="pro.png" alt="Projects">
+  <h2>Projects</h2>
+  <p>Current and completed infrastructure and social development projects within Nkana: roads, clinics, schools, and clean water access.</p>
+</section>
+
+<section id="youth" class="info-section">
+  <img src="3.jpg" alt="Youth Engagement">
+  <h2>Youth Engagement</h2>
+  <p>Programs supporting skills training, innovation, entrepreneurship, and recreational spaces for youth in the constituency.</p>
+</section>
+
+<section id="cdf" class="info-section">
+  <img src="cdf.png" alt="CDF Plans">
+  <h2>CDF Plans</h2>
+  <p>Utilization of the Constituency Development Fund (CDF) with transparency—focused on education, health, and community infrastructure.</p>
+</section>
+
+<section id="welfare" class="info-section">
+  <img src="sw.jpg" alt="Social Welfare">
+  <h2>Social Welfare</h2>
+  <p>Support programs for vulnerable households: elderly care, food security, bursaries, and healthcare support.</p>
+</section>
+
+<section id="collaborations" class="info-section">
+  <img src="c.jpg" alt="Collaborations">
+  <h2>Collaborations with Government</h2>
+  <p>Joint efforts with government ministries, departments, and agencies to implement policy and development initiatives in Nkana and the rest of the country.</p>
+</section>
+
+
+
+
+<!-- Search Bar -->
+<div class="search-box">
+  <input type="text" id="searchInput" onkeyup="searchCouncillors()" placeholder="Search by name, ward, or contact...">
+</div>
+
+<!-- Councillor Grid -->
+<section class="councillors">
+  <h2>Ward Councillors – Nkana Constituency</h2>
+  <div class="grid" id="councillorGrid">
+    <!-- Example councillors -->
+    <div class="card">
+      <img src="images/ward1.jpg" alt="John Zulu">
+      <h3>John Zulu</h3>
+      <p>Wusakile Ward</p>
+      <p>+260 97 000 1111</p>
+    </div>
+    <div class="card">
+      <img src="images/ward2.jpg" alt="Mary Banda">
+      <h3>Mary Banda</h3>
+      <p>Kamitondo Ward</p>
+      <p>+260 97 000 2222</p>
+    </div>
+    <div class="card">
+      <img src="images/ward3.jpg" alt="James Mumba">
+      <h3>James Mumba</h3>
+      <p>Chamboli Ward</p>
+      <p>+260 97 000 3333</p>
+    </div>
+    <div class="card">
+      <img src="images/ward4.jpg" alt="Lilian Phiri">
+      <h3>Lilian Phiri</h3>
+      <p>Racecourse Ward</p>
+      <p>+260 97 000 4444</p>
+    </div>
+    <!-- You can add more councillors up to 20 -->
+  </div>
+</section>
+
+
+<!-- Map -->
+<section class="map-section">
+  <h2>Nkana Constituency Location</h2>
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15090.823073440855!2d28.20314575!3d-12.828422449999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x194fc1c59c999efb%3A0x569bfe1ac35b2d70!2sNkana%20Constituency!5e0!3m2!1sen!2szm!4v1719000000000!5m2!1sen!2szm" 
+      width="100%" 
+      height="450" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <br>
+    <p style="text-align:center; margin-top:10px;">
+      <a href="https://maps.app.goo.gl/dNacZ8xv3ixrihWi8" target="_blank" style="color:#005b96; font-weight:bold;">
+        View Nkana Constituency on Google Maps
+      </a>
+    </p>
+  </div>
+</section>
+
+
+
+
+</section>
+<!-- Footer -->
+<footer>
+  <p>Website powered by Sande Tech Solutions | © 2025</p>
+</footer>
+
+<!-- Script -->
+<script>
+  function searchCouncillors() {
+    const input = document.getElementById('searchInput').value.toLowerCase();
+    const cards = document.querySelectorAll('#councillorGrid .card');
+
+    cards.forEach(card => {
+      const text = card.innerText.toLowerCase();
+      if (text.includes(input)) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
